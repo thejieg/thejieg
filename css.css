@@ -1,132 +1,120 @@
+    /*-----------list styles-----------*/
 
-
-@media screen and (max-width: 450px){
-  .container{
-  margin:0 auto;
-  padding: 0 10px;
-  font-family: 'Open Sans', sans-serif;
-  font-size: 12px;
-  }
-
-  .special{
-    padding: 20px 0 10px 6px ;
-    font-size: 1.2em;
-    font-weight: normal;
-  }
-
-  h2{
-      font-size: 1.5em;
-      font-weight: 300;
-      padding:20px 0 40px 0;
-  }
-
-}
-@media screen and (min-width:451px) and (max-width:900px){
-  .container{
-    margin:0 auto;
-    padding: 0 20px;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 16px;
-  }
-
-  .special{
-    padding: 80px 0 10px 6px ;
+.list {
     font-size: 1em;
-    font-weight: normal;
-  }
-
-  h2{
-    font-size: 2em;
-    font-weight: 300;
-    padding:20px 0 40px 0;
-  }
-}
-@media screen and (min-width:901px){
-  .container{
-    max-width: 1200px;
-    margin:0 auto;
-    padding: 0 40px;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 16px;
-  }
-
-  .special{
-
-      padding: 60px 0 40px 6px ;
-      font-size: 1.5em;
-      font-weight: normal;
-
-    }
-
-  h2{
-    font-size: 2.45em;
-    font-weight: 300;
-    padding:20px 0 40px 0;
-  }
-
-
-}
-/*-----------list styles-----------*/
-.list{
-      font-size: 1em;
-      margin: 0 ;
-
+    margin: 0;
 }
 
-ul{
-        list-style: none;
-        display: flex;
-        margin: 0;
-        padding: 0;
-  }
-
-ul li{
-        margin: 0;
-        padding: 30px 40px 0 0;
+ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
 }
+
+ul li {
+    margin: 0;
+    padding: 30px 40px 0 0;
+}
+
 
 /*-----------link styles-----------*/
 
-a:link, a:visited{
-  text-decoration: none;
-  color:black;
+a:link,
+a:visited {
+    text-decoration: none;
+    color: black;
 }
 
-a:hover{
-  text-decoration: underline;
-  color:blue;
+a:hover {
+    text-decoration: underline;
+    color: blue;
 }
 
-a:active{
-          text-decoration: none;
-          color:blue;
-      }
+a:active {
+    text-decoration: none;
+    color: blue;
+}
 
-.bold{
-
+.bold {
     font-weight: 600;
-
 }
 
-p{
-      font-family: 'Open Sans', sans-serif;
-      font-weight: 300;
-      font-size: 1em;
-      color: black;
-      padding: 20px 0 20px 0;
-
-  }
+p {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    font-size: 1em;
+    color: black;
+    padding: 20px 0 20px 0;
+}
 
 hr {
-      display:block;
-      border-style: solid;
-      border-width: 1px;
-      border-color:#b7b7b7;
+    display: block;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #b7b7b7;
+}
 
-  }
-hr.breakline{
-        margin: 0;
-        width: 40px;
-        color: grey;
+hr.breakline {
+    margin: 0;
+    width: 40px;
+    color: grey;
+}
 
+
+/*-----------media query-----------*/
+
+@media screen and (max-width: 300px) {
+    .container {
+        margin: 0 auto;
+        padding: 0 10px;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 10px;
+    }
+    .special {
+        padding: 80px 0 10px 6px;
+        font-size: 1em;
+        font-weight: normal;
+    }
+    h2 {
+        font-size: 2em;
+        font-weight: 300;
+        padding: 0;
+    }
+    @media screen and (max-width: 900px) {
+        .container {
+            margin: 0 auto;
+            padding: 0 20px;
+            font-family: 'Open Sans', sans-serif;
+            font-size: 12px;
+        }
+        .special {
+            padding: 60px 0 40px 6px;
+            font-size: 1.5em;
+            font-weight: normal;
+        }
+        h2 {
+            font-size: 2.45em;
+            font-weight: 300;
+            padding: 20px 0 40px 0;
+        }
+    }
+    @media screen and (min-width:901px) {
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 40px;
+            font-family: 'Open Sans', sans-serif;
+            font-size: 16px;
+        }
+        .special {
+            padding: 60px 0 40px 6px;
+            font-size: 1.5em;
+            font-weight: normal;
+        }
+        h2 {
+            font-size: 2.45em;
+            font-weight: 300;
+            padding: 20px 0 40px 0;
+        }
     }
